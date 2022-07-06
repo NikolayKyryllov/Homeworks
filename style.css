@@ -1,0 +1,146 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+
+.goods-wrap{
+    display: wrap;
+}
+.product-section{
+    padding: 80px 0;
+}
+.block-heading{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 200;
+    margin-bottom: wrap;
+}
+.goods-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.good-item{
+    width: 350px;
+    border: 1px solid black;
+    padding: 15px 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+.im1,.im2,.im3,.im4{
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+.im1{
+    width: 350px;
+    height: 350px;
+    background-image: url("https://scitechdaily.com/images/An-illustration-of-the-Wolf-Rayet-star-R136a1.jpg?ezimgfmt=rs:350x350/rscb1/ng:webp/ngcb1");
+}
+.im2{
+    width: 350px;
+    height: 350px;
+    background-image: url("https://images.pling.com/cache/350x350-2/img/00/00/64/28/81/1795442/space-planets-stars-design-hd-wallpaper-wallpaper-1920x1080-10wallpaper.com.jpg");
+}
+.im3{
+    width: 350px;
+    height: 350px;
+    background-image: url("https://spaceplace.nasa.gov/supernova/en/sun-compare.jpg");
+}
+.im4{
+    width: 350px;
+    height: 350px;
+    background-image: url("https://img1.akspic.ru/previews/9/9/5/5/3/135599/135599-planeta-astronomicheskij_obekt-kosmos-prostranstvo-vselennaya-x350.jpg");
+}
+.item-description,.item-button,.item-price{
+    margin-top: 25px;
+}
+.item-description p{
+    font-size: 19px;
+    text-align: center;
+    font-weight: 700;
+}
+.item-button{
+    display: flex;
+    justify-content: center;
+}
+.item-button a{
+    background: #8ce7f3;
+    padding: 15px 70px;
+    font-size: 19px;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.item-button a::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 10px;
+    left: 0;
+    top: 0;
+    transition: .5s ease-out;
+    opacity: .5;
+}
+.item-button a:hover{
+    color: white;
+}
+.item-button a:hover::before{
+    width: 100%;
+    transition: .5s ease-out;
+}
+
+.first a::before{
+    background: gold;
+
+}
+.second a::before{
+    background: black;
+}
+.third a::before{
+    background: peru;
+}
+.fourth a::before{
+    background: violet;
+}
+.item-price p{
+    text-align: right;
+    font-size: 19px;
+}
+
+.im1:hover{
+    width: 350px;
+    height: 350px;
+    background-image: url("https://images.pling.com/cache/350x350-2/img/00/00/63/44/36/1697813/galaxy-space-light-stars-nebula-latest-desktop-wallpaper-wallpaper-1920x1080-10wallpaper.com.jpg");
+    transition: 5s;
+}
+.im2:hover{
+    width: 350px;
+    height: 350px;
+    background-image: url("https://www.sideshow.com/storage/product-images/909962/goauld-mothership_stargate_square.jpg");
+    transition: 5s;
+}
+.im3:hover{
+    width: 350px;
+    height: 350px;
+    background-image: url("https://scitechdaily.com/images/Close-up-of-Star-Formation-777x777.jpg?ezimgfmt=rs:350x350/rscb1/ng:webp/ngcb1");
+    transition: 5s;
+}
+.im4:hover{
+    width: 350px;
+    height: 350px;
+    background-image: url("https://cameo-splashbacks.co.uk/wp-content/uploads/2019/03/constellation-1-2-350x350.jpg");
+    transition: 5s;
+}
+.item-description1 > :first-child:hover{
+    color: blue;
+}
+.item-description2 > :first-child:hover{
+    color: aqua;
+}
+.item-description3 > :first-child:hover{
+    color: darkgreen;
+}
+.item-description4 > :first-child:hover{
+    color: gold;
+}
